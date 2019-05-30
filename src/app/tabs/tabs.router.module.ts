@@ -31,9 +31,20 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab3/tab3.module#Tab3PageModule'
+          },
+    /*      {
+            path: 'player',
+            children: [
+              {
+                path: '',
+                loadChildren: './../player/player.module#PlayerPageModule'
+              }
+            ]
           }
+*/
         ]
       },
+
       {
         path: '',
         redirectTo: '/tabs/tab1',

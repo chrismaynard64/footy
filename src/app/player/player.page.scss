@@ -1,0 +1,19 @@
+.head {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.lbl {
+    font-weight: bold;
+}
+
+ion-item > ion-label {
+    width: 170px;
+    flex: 0 0 auto;
+    margin: 2px 0 2px 0;
+    height: 26px;
+}
+
+ion-item > ion-label.lbl {
+    width: 70px;
+}

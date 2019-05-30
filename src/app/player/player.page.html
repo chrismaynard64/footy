@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-button (click)="goBack()"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Player</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col  size="12"  size-md>
+              <div class="ion-text-center">
+                 <ion-item>
+                    <div slot="start" *ngIf="prev" (click)="go(prev)">
+                      <ion-button><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+                    </div>
+                      <div class="head">{{player.fname}} {{player.lname}}</div> 
+                      <div slot="end" *ngIf="next" (click)="go(next)"> <ion-button><ion-icon name="arrow-round-forward"></ion-icon></ion-button></div> 
+                </ion-item>
+          </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row align-items-center>
+            <ion-col  size="12" size-md="6" offset-md="3">
+                <div class="ion-text-center">
+                <img [src]="player.picurl" width="300px">
+                </div>
+            </ion-col>
+          </ion-row>
+
+
+          <ion-row align-items-center>
+              <ion-col  size="12" size-md="6" offset-md="3">
+                  <div class="ion-text-center">
+                  <ion-item>
+                      <ion-label position="fixed" slot="start" class="lbl">Position</ion-label>
+                      <ion-label position="fixed">{{player.position}}</ion-label>
+                    </ion-item>
+                  </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row align-items-center>
+                <ion-col  size="12"  size-md="6" offset-md="3">
+                  
+                    <ion-item>
+           
+                        <ion-label position="fixed" slot="start" class="lbl">Club</ion-label>
+                        <ion-label position="fixed">{{player.club}}</ion-label>
+              
+                      </ion-item>
+                    
+                </ion-col>
+              </ion-row>
+    
+
+              <ion-row align-items-center>
+                  <ion-col  size="12" size-md size-md="6" offset-md="3">
+                      <ion-item>
+                          <ion-label position="fixed" slot="start" class="lbl">Age</ion-label>
+                          <ion-label position="fixed">{{player.age}}</ion-label>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+
+
+              <ion-row align-items-center>
+                  <ion-col  size="12"  size-md="6" offset-md="3">
+                      <ion-item>
+                          <ion-label position="fixed" slot="start" class="lbl">Height</ion-label>
+                          <ion-label position="fixed">{{player.height}}</ion-label>
+                        </ion-item>
+                  </ion-col>
+                </ion-row>
+  
+
+    </ion-grid>
+  
+</ion-content>
