@@ -1,0 +1,9 @@
+https://capacitor.ionicframework.com/docs/android
+
+npx cap add android
+
+ionic capacitor copy android
+ionic capacitor run android
+
+npx cap copy
+npx cap open android

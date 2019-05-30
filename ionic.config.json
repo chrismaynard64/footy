@@ -1,7 +1,9 @@
 {
   "name": "ionicapp",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "id": "6b3f791d"
 }

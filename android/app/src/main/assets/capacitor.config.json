@@ -1,0 +1,7 @@
+{
+  "appId": "com.kamish.footy",
+  "appName": "ionicfooty",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
